@@ -17,10 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener {
-            Toast.makeText(this, "ボタンが押されました", Toast.LENGTH_SHORT)
-                    .show()
-        }
+        setupToastButton()
+        setupNextButton()
     }
 
     override fun onStart() {
@@ -46,5 +44,18 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         Log.d("LifeCycle", "onDestroy")
         super.onDestroy()
+    }
+
+    private fun setupToastButton() {
+        binding.button.setOnClickListener {
+            Toast.makeText(this, "ボタンが押されました", Toast.LENGTH_SHORT)
+                    .show()
+        }
+    }
+
+    private fun setupNextButton() {
+        binding.next.setOnClickListener {
+            startActivity(SubActivity.createIntent(this))
+        }
     }
 }

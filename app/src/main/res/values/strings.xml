@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">SampleApp</string>
 
-    <string name="main_label_text_view">TextView</string>
-    <string name="main_label_button">Button</string>
+    <string name="main_text_view">TextView</string>
+    <string name="main_button">Button</string>
+    <string name="main_next">Next</string>
+
+    <string name="sub_text_view">SubActivityだよ</string>
 </resources>

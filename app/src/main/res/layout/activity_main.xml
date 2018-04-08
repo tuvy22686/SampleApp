@@ -12,12 +12,17 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_label_text_view" />
+            android:text="@string/main_text_view" />
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_label_button"/>
+            android:text="@string/main_button"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_next"/>
 
     </LinearLayout>
 </layout>
